@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    font-size: 38px;
+    background-color: slategray;
+    color: azure;
+}
+
+nav {
+    display: flex;
+    background-color: #e1e1e5;
+}
+
+nav a {
+    color: black;
+    padding: 14px 20px;
+    font-size: 18px;
+    text-decoration: solid;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cfac82;
+}
+
+p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+#about {
+    background-color: #95a6bf;
+    float: left;
+    flex-wrap: wrap;
+}
+
+
+#work {
+    width: 100%;
+    background-color: #151d2a;
+}
+
+/* CSS formatting each portfolio application */
+
+.allbirds {
+    border: 5px dashed #95a6bf;
+    background-image: url("../Images/Lnqryjus.jpeg");
+    height: 700px;
+    width: 1000px;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 600px;
+}
+
+.horiseon {
+    background-image: url("../Images/172485466-34340047-e4d8-4a90-abc9-de8d2cad17b2.png");
+    width: 600px;
+    height: 500px;
+    border: 5px dashed #95a6bf;
+    margin: 20px;
+}
+
+.gopuff {
+    background-image: url("../Images/Screen Shot 2022-06-12 at 11.04.53 PM.png");
+    width: 600px;
+    height: 500px;
+    border: 5px dashed #95a6bf;
+    margin: 20px;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 48px;
+    text-decoration: underline solid;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 24px;
+}
+
+h4 {
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: wavy;
+}
+
+.text-block {
+    background-color: black;
+    color: white;
+    float: left;
+}
+
+.headshot {
+    width: 40%;
+    height: 350px;
+    border: 2px solid rgb(158, 208, 155);
+}
+
+footer {
+    padding-top: 40px;
+    background-color: #b0bfd7;
+}
+
+footer .info {
+    margin-left: 50%;
+}
+
+.info {
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: wavy; 
+}
+
+/* CSS to change section sizing to be responsive. Nav shifts to a column and the Main/Nav stack to a column */
+@media screen and (max-width: 768px) {
+  
+    main,
+    nav {
+      flex-direction: column;
+    }
+
+    main {
+      order: 2;
+    }
+
+    .allbirds,  {
+        height: 400px;
+        width: 300px;
+        background-position: left;
+    }
+
+    .horiseon,
+    .gopuff {
+        height: 300px;
+        width: 200px;
+        background-position: left;
+    }
+
+  }
